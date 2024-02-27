@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- Tags para formulários -->
+    <!-- Para construir um formulário com o HTML possuímos as seguintes tags: -->
+    <!-- 1) <form>: é o container do formulário. Todos os campos e botões deverão estar dentro desta tag. -->
+    <!-- 2) <input>: usada para inserir um campo. -->
+    <!-- 3) <select>: utilizada para criar uma lista de opções, uma caixa de seleção.-->
+     <!-- 4) <button>: usada para inserir botões. --> 
+
+    <!-- Tipos de campo-->
+     <!-- Na tag <input> possuímos um atributo chamado type que pode receber valores:-->
+     <!-- 1) text: para campos de texto;-->
+     <!-- 2) email: para campos que receberão um e-mail;-->
+    <!-- 3) tel: para campos que irão receber um número de telefone;--> 
+    <!-- 4) file: para campos que serão utilizados para anexar um arquivo;--> 
+    <!-- 5) color: para campos que receberão uma cor;--> 
+    <!-- 6) checkbox: para criar caixas de marcação;-->
+    <!-- 7) radio: para criar campos de opção. -->
+
+    <h1>Formulários</h1>
+    <form>
+        <input type="text" placeholder="Seu nome" />
+        <br>
+        <label for="email">Seu email</label>
+        <input id="email" type="email" />
+        <br>
+        <input type="tel" placeholder="Seu telefone" />
+        <br>
+        <input type="number" max="10" min="2" step="2" />
+        <br>
+        <input type="file" /> 
+        <br>
+        <input type="color" />
+        <br>
+        <input type="checkbox" id="checkbox-termos" /> <label for="checkbox-termos">Aceito os termos</label>
+
+        <p>
+            Qual sua cor favorit?
+        </p>
+        <input type="radio" name="cor-favorita" id="cor-vermelha"/> <label for="cor-vermelha">Vermelho</label>
+        <input type="radio" name="cor-favorita" id="cor-verde"/> <label for="cor-verde">Verde</label>
+        <input type="radio" name="cor-favorita" id="cor-azul"/> <label for="cor-azul">Azul</label>
+        <br>
+        <label>Qual seu filme favorito?</label>
+        <select multiple>
+            <option>Filme A</option>
+            <option>Filme B</option>
+            <option>Filme C</option>
+        </select>
+        <br>
+        <textare></textarea>
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            Limpar
+        </button>
+    </form>
+</body>
+</html>
